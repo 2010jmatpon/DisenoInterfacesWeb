@@ -32,6 +32,10 @@ a{
     margin: 10px;
     height: 35px;
 }
+.img-madrid2{
+    margin: 10px;
+    height: 200px;
+}
 
 .divPrincipal {
     display: grid;
@@ -64,6 +68,7 @@ a{
 
 .zonaNavegacion div:hover{
     background-color: rgb(251, 255, 0);
+    background-image: url(images/logo1ok.jpg);
 }
 
 .zonaContenido {
