@@ -37,6 +37,11 @@ a{
     height: 200px;
 }
 
+.img-paleta{
+    margin: 10px;
+    height: 70px;
+}
+
 .divPrincipal {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /*1fracción o 1 parte del TODO en el que esta contenido*/
