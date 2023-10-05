@@ -1,4 +1,3 @@
-
 a{
     text-decoration: none;
     color: inherit;
@@ -72,8 +71,10 @@ a{
 }
 
 .zonaNavegacion div:hover{
-    background-color: rgb(251, 255, 0);
-    background-image: url(images/logo1ok.jpg);
+    color: white;
+    background-image: url(images/Champions_League_24.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .zonaContenido {
