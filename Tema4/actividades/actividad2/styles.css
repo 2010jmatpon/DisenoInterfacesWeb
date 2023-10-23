@@ -1,0 +1,39 @@
+table{ /*Especifidad de etiqueta HTML*/
+    border-collapse: collapse; 
+    width: 200px;
+    height: 200px;
+}
+    
+.table_row--first-row{
+    border-bottom: 2px solid black;
+}
+
+.row_td--right-bottom{
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+.row_td--bottom{
+    border-bottom: 1px solid gray;
+}
+.row_td--right{
+    border-right: 1px solid gray;
+}
+
+tr th:nth-child(1) {
+    border-right: 2px solid black;
+
+    
+}
+
+h2{
+    color: blue;
+}
+
+b{
+    color: red;
+}
+
+caption{
+    font-size: 0.5em;
+}
