@@ -1,0 +1,6 @@
+header 200px
+100%
+
+dendtro de header 2 cajas una en azul de 100 px y otra de 50px
+distancia primera caja a borde 30%.
+dentro de la segunda caja 3 cajas una roja otra verde y otra azul
