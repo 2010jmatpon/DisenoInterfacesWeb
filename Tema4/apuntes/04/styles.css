@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+}
+.seccion-ppal {
+  background-color: black;
+  width: auto;
+  height: 200px;
+
+  position: relative;
+  top: 50px;
+    display: flex;
+}
+
+.seccion-ppal__div1 {
+  height: 50px;
+
+  background-color: blueviolet;
+}
+
+.seccion-ppal__div2 {
+  height: 50px;
+
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background-color: aquamarine;
+}
+
+.seccion-ppal__div3 {
+  height: 50px;
+
+  position: relative;
+
+  top: 20px;
+
+  left: 20px;
+
+  background-color: coral;
+}
