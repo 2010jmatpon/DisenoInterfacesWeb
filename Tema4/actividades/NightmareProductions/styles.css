@@ -15,57 +15,101 @@ Tipografías
 2. Roboto ---------------> Titulos (h1...etc)
 3. Noto Serif Japanese --> Textos (p...etc)
 */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP&family=Roboto&display=swap");
 @font-face {
-	font-family: "ZombieHolocaust";
-	src: url("Fonts/Zombie_Holocaust.ttf") format("truetype");
+  font-family: "ZombieHolocaust";
+  src: url("Fonts/Zombie_Holocaust.ttf") format("truetype");
 }
 
 * {
-    font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
-body{
-    margin: 0;
+body {
+  margin: 0;
 }
 
 /*Ahora vamos a poner a cada elemento, una rtipografía especifica... sin tener en cuenta el font-weight*/
-h1, h2, h3, h4, h5, h6, a {
-    font-family: 'Roboto', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  font-family: "Roboto", sans-serif;
 }
 
-p, span, div{
-    font-family: 'Noto Serif JP', serif;
+p,
+span,
+div {
+  font-family: "Noto Serif JP", serif;
 }
 
-#tituloPagina{
-    font-family: 'ZombieHolocaust', sans-serif;
+#tituloPagina {
+  font-family: "ZombieHolocaust", sans-serif;
 }
 
-.header{
-
-    height: 90px;
-    background-color: black;
-    display: flex;
-    justify-content: space-around;
+.header {
+  height: 90px;
+  display: flex;
+  justify-content: space-around;
 }
 
-.header__zonaTitulo{
-    height: 100%;
-    width: 20%;
+.header__zonaTitulo {
+  height: 100%;
+  width: 20%;
+  background-color: #fff;
 
-    background-color: #330000;
+  border-radius: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  transition: 0.2s linear;
 }
 
+.header__zonaTitulo:hover {
+  background-color: #ff6600;
+  transform: scale(1.05);
 
+  font-size: 1.2em; /*em es una medida que toma como referencia el font-size del html*/
+}
 
-.header__zonaNavegacion{
-    height: 100%;
-    width: 40%;
-    background-color: #330033;
+#zonaTitulo__logo img {
+  width: 60px;
+  height: auto;
+}
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px; /*Establecemos aire entre elementos*/
+.header__zonaNavegacion {
+  height: 100%;
+  width: 40%;
+  background-color: #FFFFFF
+  ;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /*Establecemos aire entre elementos*/
+}
+
+.header__zonaNavegacion a{
+    text-decoration: none; /*Para quitar el underline*/
+    color: #330033;
+}
+
+.zonaNavegacion__div{
+    padding: 5px;
+    transition: 0.1s ease-out;
+}
+
+.zonaNavegacion__div:hover{
+    border-bottom: 3px solid #ff6600;
+    border-radius: 5px;
+}
+
+.zonaNavegacion__div h3{
+    margin: 0;
 }
