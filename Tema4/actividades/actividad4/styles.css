@@ -89,6 +89,9 @@ body {
 /*Tercera línea*/
 .main__section--blueviolet {
   background-color: blueviolet;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .section__caja--3-0 {
@@ -104,6 +107,10 @@ body {
 /*Cuarta línea*/
 .main__section--green {
   background-color: green;
+  display: flex;
+  flex-direction:row;
+  justify-content:center;
+  align-items: center;
 }
 
 .section__caja--4-0 {
@@ -127,6 +134,10 @@ body {
 }
 .section__caja--5-1 {
   background-color: white ;
+  position: absolute;
+  transform: translate(-50%, 50%);
+  left: 50%;
+
 }
 .section__caja--5-2 {
   background-color: rgb(225, 255, 0);
@@ -135,6 +146,9 @@ body {
 /*Sexta línea*/
 .main__section--orange {
   background-color: orange;
+  display: flex;
+  flex-direction:row;
+  justify-content:left;
 }
 
 .section__caja--6-0 {
@@ -150,6 +164,10 @@ body {
 /*Séptima línea*/
 .main__section--red {
   background-color: red;
+  display: flex;
+  flex-direction:row;
+  justify-content:center;
+  align-items:flex-end;
 }
 
 .section__caja--7-0 {
@@ -165,6 +183,10 @@ body {
 /*Octava línea*/
 .main__section--black {
   background-color: black;
+  display: flex;
+  flex-direction:row;
+  justify-content:center;
+  align-items:flex-end;
 }
 
 .section__caja--8-0 {
@@ -175,4 +197,7 @@ body {
 }
 .section__caja--8-2 {
   background-color: wheat;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
 }

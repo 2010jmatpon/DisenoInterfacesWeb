@@ -86,8 +86,7 @@ div {
 .header__zonaNavegacion {
   height: 100%;
   width: 40%;
-  background-color: #FFFFFF
-  ;
+  background-color: #ffffff;
 
   display: flex;
   justify-content: center;
@@ -95,21 +94,94 @@ div {
   gap: 10px; /*Establecemos aire entre elementos*/
 }
 
-.header__zonaNavegacion a{
-    text-decoration: none; /*Para quitar el underline*/
-    color: #330033;
+.header__zonaNavegacion a {
+  text-decoration: none; /*Para quitar el underline*/
+  color: #330033;
 }
 
-.zonaNavegacion__div{
-    padding: 5px;
-    transition: 0.1s ease-out;
+.zonaNavegacion__div {
+  padding: 5px;
+  transition: 0.1s ease-out;
 }
 
-.zonaNavegacion__div:hover{
-    border-bottom: 3px solid #ff6600;
-    border-radius: 5px;
+.zonaNavegacion__div:hover {
+  border-bottom: 3px solid #ff6600;
+  border-radius: 5px;
 }
 
-.zonaNavegacion__div h3{
-    margin: 0;
+.zonaNavegacion__div h3 {
+  margin: 0;
+}
+
+/*
+************ZONA MAIN*************
+*/
+
+.zonaMain {
+  margin-top: 10px;
+
+  display: grid;
+  /*Cuantas columnas queremos*/
+  grid-template-columns: repeat(12, 1fr); /*fr: unidad de medida*/
+
+  /*Establecemos tamaño minimo a la row*/
+  grid-auto-rows: minmax(200px, auto);
+
+  /*Aplicamos un poco de aire*/
+  row-gap: 10px;
+  column-gap: 10px;
+}
+
+.main__zonaImagen {
+  grid-column: 2/6;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main__zonaImagen img {
+  width: auto; /**/
+  max-height: 300px;
+  border: 6px solid #330033;
+  border-radius: 10px;
+  transition: 0.1s linear;
+}
+
+.main__zonaImagen img:hover {
+  border: 0px solid #330033;
+  transform: scale(1.03);
+}
+
+.main__zonaDescripcion {
+  grid-column: 6/12;
+
+  border-left: 6px solid #330033;
+  border-radius: 10px;
+
+  padding: 10px;
+}
+
+.zonaDescripcion__actores-nota {
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+.actores-nota__actores {
+  grid-column: 1;
+}
+
+.actores-nota__nota {
+  grid-column: 2;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#nota__puntuacion {
+  font-family: "ZombieHolocaust";
+  font-size: 2.5em;
+  color: #ff0000;
 }
