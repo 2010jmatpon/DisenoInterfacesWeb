@@ -1,0 +1,27 @@
+.container{
+    min-height: 100vh;
+    background-color: black;
+}
+
+.container__grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(15%, 20%);
+}
+
+.zonaArticulo1{
+    grid-column: 2/4;
+    min-height: 20vh;
+    background-color: yellowgreen;
+}
+.zonaArticulo2{
+    grid-column: 4/6;
+    min-height: 20vh;
+    background-color: blueviolet;
+}
+.zonaArticulo3{
+    grid-column: 6/8;
+    min-height: 20vh;
+    background-color: rgb(205, 50, 153);
+}
