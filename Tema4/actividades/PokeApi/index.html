@@ -42,14 +42,14 @@
     <main class="main">
       <nav class="main__zonaNavegacion">
         <h3>Contents</h3>
-        <h5><a href="#">Information</a></h5>
-        <h5><a href="#">Fair Use Policy</a></h5>
-        <h5><a href="#">Slack</a></h5>
-        <h5><a href="#">Wrapper Libraries</a></h5>
+        <h5><a href="#information">Information</a></h5>
+        <h5><a href="#fairusepolicy">Fair Use Policy</a></h5>
+        <h5><a href="#slack">Slack</a></h5>
+        <h5><a href="#wrapperlibraries">Wrapper Libraries</a></h5>
 
         <h5>
           <hr />
-          <a href="#">Resource Lists/Pagination</a>
+          <a href="#resourcelists">Resource Lists/Pagination</a>
           <hr />
         </h5>
       </nav>
@@ -61,9 +61,11 @@
           </p>
           <p>
             <b>Quick tip:</b> Use your browser's "find on page" feature to
-            search for specific resource types (Ctrl+F or Cmd+F).
+            search for specific resource types (
+            <button class="informacion__button">Ctrl+F</button> or
+            <button class="informacion__button">Cmd+F</button> ).
           </p>
-          <h2>Information</h2>
+          <h2 id="information">Information</h2>
           <p>
             This is a <b>consumption-only</b> API — only the HTTP GET method is
             available on resources.
@@ -75,7 +77,7 @@
             encourage you to limit the frequency of requests to limit our
             hosting costs.
           </p>
-          <h2>Fair Use Policy</h2>
+          <h2 id="fairusepolicy">Fair Use Policy</h2>
           <p>
             PokéAPI is free and open to use. It is also very popular. Because of
             this, we ask every developer to abide by our fair use policy. People
@@ -91,7 +93,7 @@
             <li>Locally cache resources whenever you request them.</li>
             <li>Be nice and friendly to your fellow PokéAPI developers.</li>
           </ul>
-          <h2>Slack</h2>
+          <h2 id="slack">Slack</h2>
           <p>
             Have questions? Ideas? Notice something amiss here in the docs? Hit
             us up on Slack. Sign up right here then visit our Slack team. We
@@ -100,7 +102,7 @@
             of people using the API who may already have answers or plans from
             experience.
           </p>
-          <h2>Wrapper Libraries</h2>
+          <h2 id="wrapperlibraries">Wrapper Libraries</h2>
           <ul>
             <li>
               <b>Node Server-side with auto caching:</b>
@@ -108,36 +110,121 @@
               Alessandro Pezzé
             </li>
             <li>
-              <b>Browser-side with auto caching:</b> <a href="#">pokeapi-js-wrapper</a> by
-              Alessandro Pezzé
+              <b>Browser-side with auto caching:</b>
+              <a href="#">pokeapi-js-wrapper</a> by Alessandro Pezzé
             </li>
-            <li><b>Python 3 with auto caching:</b> <a href="#">PokeBase</a> by Greg Hilmes</li>
-            <li><b>Python 2/3 with auto caching:</b> <a href="#">Pokepy</a> by Paul Hallett</li>
-            <li><b>Kotlin (and Java):</b> <a href="#">PokeKotlin</a> by sargunster</li>
             <li>
-              <b>Java (Spring Boot) with auto caching:</b> <a href="#"> pokeapi-reactor</a> by Benjamin
-              Churchill
+              <b>Python 3 with auto caching:</b> <a href="#">PokeBase</a> by
+              Greg Hilmes
             </li>
-            <li><b>.NET (C#, VB, etc):</b> <a href="#">PokeApi.NET</a> by PoroCYon</li>
-            <li><b>.NET Standard:</b> <a href="#">PokeApiNet</a> by mtrdp642</li>
+            <li>
+              <b>Python 2/3 with auto caching:</b> <a href="#">Pokepy</a> by
+              Paul Hallett
+            </li>
+            <li>
+              <b>Kotlin (and Java):</b> <a href="#">PokeKotlin</a> by sargunster
+            </li>
+            <li>
+              <b>Java (Spring Boot) with auto caching:</b>
+              <a href="#"> pokeapi-reactor</a> by Benjamin Churchill
+            </li>
+            <li>
+              <b>.NET (C#, VB, etc):</b> <a href="#">PokeApi.NET</a> by PoroCYon
+            </li>
+            <li>
+              <b>.NET Standard:</b> <a href="#">PokeApiNet</a> by mtrdp642
+            </li>
             <li><b>Swift:</b> <a href="#">PokemonAPI</a> by kinkofer</li>
             <li><b>PHP:</b> <a href="#">PokePHP</a> by Dan Rovito</li>
             <li><b>PHP:</b> <a href="#">PHPokéAPI</a> by lmerotta</li>
-            <li><b>Ruby:</b> <a href="#">Poke-Api-V2</a>  by rdavid1099</li>
+            <li><b>Ruby:</b> <a href="#">Poke-Api-V2</a> by rdavid1099</li>
             <li><b>Go:</b> <a href="#">pokeapi-go</a> by mtslzr</li>
             <li><b>Crystal:</b> <a href="#">pokeapi</a> by henrikac</li>
-            <li><b>Typescript with auto caching:</b> <a href="#">Pokenode-ts</a> by Gabb-c</li>
-            <li><b>Rust with auto caching:</b> <a href="#">Rustemon</a> by mlemesle</li>
             <li>
-              <b>Asynchronous Python wrapper with auto caching:</b> <a href="#">aiopokeapi</a> by
-              beastmatser
+              <b>Typescript with auto caching:</b>
+              <a href="#">Pokenode-ts</a> by Gabb-c
             </li>
-            <li><b>Scala 3 with auto caching:</b> <a href="#">pokeapi-scala</a> by Juliano Alves</li>
             <li>
-              <b>Elixir wrapper with auto caching:</b> <a href="#">Max-Elixir-PokeAPI</a> by Henrique
-              Artur
+              <b>Rust with auto caching:</b> <a href="#">Rustemon</a> by
+              mlemesle
+            </li>
+            <li>
+              <b>Asynchronous Python wrapper with auto caching:</b>
+              <a href="#">aiopokeapi</a> by beastmatser
+            </li>
+            <li>
+              <b>Scala 3 with auto caching:</b> <a href="#">pokeapi-scala</a> by
+              Juliano Alves
+            </li>
+            <li>
+              <b>Elixir wrapper with auto caching:</b>
+              <a href="#">Max-Elixir-PokeAPI</a> by Henrique Artur
             </li>
           </ul>
+          <hr color="red">
+          <br>
+          <h2 id="resourcelists">Resource Lists/Pagination<span class="informacion__subtituloResourceLists"> (group)</span></h2>
+          <p>
+            Calling any API endpoint without a resource ID or name will return a
+            paginated list of available resources for that API. By default, a
+            list "page" will contain up to 20 resources. If you would like to
+            change this just add a 'limit' query parameter to the GET request,
+            e.g. ?limit=60. You can use 'offset' to move to the next page, e.g.
+            ?limit=60&offset=60.
+          </p>
+          <h3>Named <span class="informacion__subtitulo"> (endpoint)</span></h3>
+          <p>
+            <pre><span class="informacion__codigoGET"></span><span class="informacion__GET">GET</span> https://pokeapi.co/api/v2/{endpoint} </pre>
+
+          </p>
+          <div class="informacion__codigo">
+            <pre>
+count: 248
+next: "https://pokeapi.co/api/v2/ability/?limit=20&offset=20",
+previous: null,
+results: [
+  {
+  name: stench,
+  url: "https://pokeapi.co/api/v2/ability/1/"
+  }
+]
+</pre>
+            <hr>
+	          <input type="checkbox">View raw JSON (0.213 kB, 11 lines)</input>
+          </div>
+          <h3>NamedAPIResourceList <span class="informacion__subtitulo"> (type)</span></h3>
+          <table class="informacion__tabla">
+            <th>Name</th>
+            <th>Description</th>
+            <th>Type</th>
+            <tbody>
+              <tr>
+                <th><pre>count</pre></th>
+              <td>The total number of resources available from this API.</td>
+              <td><i>integer</i></td>
+              </tr>
+              
+              <tr>
+                <th><pre>next</pre></th>
+              <td>The URL for the next page in the list.</td>
+              <td><i>string</i></td>
+              </tr>
+              
+              <tr>
+                <th><pre>previous</pre></th>
+              <td>The URL for the previous page in the list.</td>
+              <td><i>string</i></td>
+              </tr>
+              
+              <tr>
+                <th><pre>results</pre></th>
+              <td>A list of named API resources.</td>
+              <td><i>list <a href="#">NamedAPIResource</a></i></td>
+              </tr>
+              
+            </tbody>
+          </table>
+          <hr color="red">
         </div>
       </div>
     </main>

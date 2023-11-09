@@ -83,23 +83,31 @@ body {
 .main__zonaNavegacion {
   background-color: white;
   /* grid-column: 3/5; */
+  display: block;
+  overflow-y: auto;
+  position: sticky;
+  top: 0;
   align-items:baseline;
   width: 250px;
 
 }
 
+
 .main__zonaNavegacion h3 {
   margin-left: 15px;
   font-weight: 700;
   margin-bottom: 40px;
+
 }
 .main__zonaNavegacion h5 {
   margin-left: 15px;
   margin-top: -18px;
   font-weight: 400;
+  
 }
 .main__zonaNavegacion h5>hr {
   margin-right: 120px;
+  
 }
 
 
@@ -124,6 +132,18 @@ body {
   margin-top: 30px;
  margin-left: 5px;
 }
+
+
+
+.informacion__button{
+  
+  border: 1px solid;
+  border-radius: 3px;
+  font-weight: 300; 
+  
+  
+}
+
 .main__zonaContenido p{
   font-weight: 400;
   
@@ -134,4 +154,39 @@ body {
 .main__zonaContenido a:hover{
   text-decoration: underline;
   background-color: #cee9f9;
+}
+.informacion__codigoGET{
+  font-size: large;
+}
+.informacion__GET{
+  background-color: #1172DB;
+  padding: 5px 8px;
+  border-radius: 4px;
+  color: white;
+}
+
+.informacion__codigo{
+  background-color: #eff1f0;
+  margin-right: 15px;
+  padding: 10px;
+  padding-bottom: 0px;
+  font-weight: 400;
+}
+.informacion__subtituloResourceLists{
+  font-weight: 400;
+  font-size: 0.8em;
+  color: gray;
+}
+.informacion__subtitulo{
+  font-weight: 400;
+  color: gray;
+}
+
+.informacion__tabla{
+  align-items: right;
+  
+}
+.informacion__tabla td{
+  font-weight: 300;
+  color: gray;
 }
