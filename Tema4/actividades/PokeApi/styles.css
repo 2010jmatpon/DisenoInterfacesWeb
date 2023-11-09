@@ -83,10 +83,12 @@ body {
 .main__zonaNavegacion {
   background-color: white;
   /* grid-column: 3/5; */
-  display: block;
-  overflow-y: auto;
+  /* display: block;
+  overflow-y: auto; */
   position: sticky;
   top: 0;
+  width: 100%;
+  height: calc(100vh);
   align-items:baseline;
   width: 250px;
 
@@ -184,9 +186,18 @@ body {
 
 .informacion__tabla{
   align-items: right;
+  width: 100%;
   
 }
-.informacion__tabla td{
+
+.tabla__header{
+  font-weight: 400;
+}
+.tabla__info{
   font-weight: 300;
   color: gray;
+}
+.tabla__name{
+  align-items: left;
+  margin-left: 50px;
 }

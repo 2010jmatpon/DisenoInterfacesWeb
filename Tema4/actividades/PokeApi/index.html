@@ -193,37 +193,39 @@ results: [
 	          <input type="checkbox">View raw JSON (0.213 kB, 11 lines)</input>
           </div>
           <h3>NamedAPIResourceList <span class="informacion__subtitulo"> (type)</span></h3>
-          <table class="informacion__tabla">
-            <th>Name</th>
-            <th>Description</th>
-            <th>Type</th>
-            <tbody>
-              <tr>
-                <th><pre>count</pre></th>
-              <td>The total number of resources available from this API.</td>
-              <td><i>integer</i></td>
-              </tr>
-              
-              <tr>
-                <th><pre>next</pre></th>
-              <td>The URL for the next page in the list.</td>
-              <td><i>string</i></td>
-              </tr>
-              
-              <tr>
-                <th><pre>previous</pre></th>
-              <td>The URL for the previous page in the list.</td>
-              <td><i>string</i></td>
-              </tr>
-              
-              <tr>
-                <th><pre>results</pre></th>
-              <td>A list of named API resources.</td>
-              <td><i>list <a href="#">NamedAPIResource</a></i></td>
-              </tr>
-              
-            </tbody>
-          </table>
+          <div class="zonaContenido__tabla">
+            <table class="informacion__tabla">
+              <td class="tabla__header">Name</td>
+              <td class="tabla__header">Description</td>
+              <td class="tabla__header">Type</td>
+              <tbody>
+                <tr>
+                  <th class="tabla__name"><pre>count</pre></th>
+                  <td class="tabla__info">The total number of resources available from this API.</td>
+                  <td class="tabla__info"><i>integer</i></td>
+                </tr>
+                
+                <tr>
+                  <th class="tabla__name"><pre>next</pre></th>
+                  <td class="tabla__info">The URL for the next page in the list.</td>
+                  <td class="tabla__info"><i>string</i></td>
+                </tr>
+                
+                <tr>
+                  <th class="tabla__name"><pre>previous</pre></th>
+                  <td class="tabla__info">The URL for the previous page in the list.</td>
+                  <td class="tabla__info"><i>string</i></td>
+                </tr>
+                
+                <tr>
+                  <th class="tabla__name"><pre>results</pre></th>
+                  <td class="tabla__info">A list of named API resources.</td>
+                  <td class="tabla__info"><i>list <a href="#">NamedAPIResource</a></i></td>
+                </tr>
+                
+              </tbody>
+            </table>
+          </div>
           <hr color="red">
         </div>
       </div>
