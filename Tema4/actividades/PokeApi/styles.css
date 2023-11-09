@@ -23,7 +23,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 15px;
+  margin-left: 50px;
 }
 
 .zonaTitulo__logo img {
@@ -41,6 +41,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 5px; /*Establecemos aire entre elementos*/
+  margin-right: 50px;
 }
 .header__zonaNavegacion a {
   text-decoration: none;
@@ -156,6 +157,10 @@ body {
 .main__zonaContenido a:hover{
   text-decoration: underline;
   background-color: #cee9f9;
+}
+
+.main__zonaContenido hr{
+  margin-right: 15px;
 }
 .informacion__codigoGET{
   font-size: large;

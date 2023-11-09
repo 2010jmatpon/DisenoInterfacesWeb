@@ -54,6 +54,12 @@ div {
   height: 90px;
   display: flex;
   justify-content: space-around;
+
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+  
+  display: flex;
 }
 
 .header__zonaTitulo {
@@ -184,4 +190,67 @@ div {
   font-family: "ZombieHolocaust";
   font-size: 2.5em;
   color: #ff0000;
+}
+
+/*
+################################################################
+####################### STYLES LAPTOP ##########################
+################################################################
+*/
+@media all and (max-width: 920px){
+  
+  .header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header__zonaNavegacion {
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /*Establecemos aire entre elementos*/
+  }
+  
+  .header__zonaTitulo {
+    height: 100%;
+    width: 20%;
+    background-color: #fff;
+  
+    border-radius: 20px;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  
+    transition: 0.2s linear;
+  }
+  
+  .main__zonaImagen {
+    grid-column: 2/12;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main__zonaDescripcion {
+    grid-column: 2/12;
+    border-left: 0px;
+    border-top: 6px solid #330033;
+  
+    padding: 10px;
+  }
 }
