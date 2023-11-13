@@ -17,14 +17,14 @@ body{
     display: flex;
 
     background-color: black;
-    color: #efb810;
-    background: linear-gradient(45deg, black, #DAA520);
+    color: #fff;
+    /* background: linear-gradient(45deg, black, #DAA520); */
     
   }
   
   .header__zonaTitulo {
     height: 100%;
-    width: 20%;
+    width: 40%;
   
     border-radius: 20px;
   
@@ -38,7 +38,7 @@ body{
   
   .header__zonaTitulo:hover {
     background-color: black;
-    transform: scale(1.05);
+    transform: scale(1);
   
     font-size: 1.2em; /*em es una medida que toma como referencia el font-size del html*/
   }
@@ -49,7 +49,7 @@ body{
   }
   
   #zonaTitulo__logo img {
-    width: 60px;
+    width: 80px;
     height: auto;
   }
   
@@ -65,19 +65,57 @@ body{
   
   .header__zonaNavegacion a {
     text-decoration: none; /*Para quitar el underline*/
-    color: #330033;
+    color: #fff;
   }
   
-  .zonaNavegacion__div {
+  .zonaNavegacion__nav {
     padding: 5px;
     transition: 0.1s ease-out;
+    font-family: "CarnevaleeFreakshow", sans-serif;
+    color: #fff;
+    
   }
   
-  .zonaNavegacion__div:hover {
-    border-bottom: 3px solid #ff6600;
+  .zonaNavegacion__nav:hover {
+    border-bottom: 3px solid #fff;
     border-radius: 5px;
   }
   
-  .zonaNavegacion__div h3 {
+  .zonaNavegacion__nav h2 {
     margin: 0;
   }
+
+  /*
+************ZONA MAIN*************
+*/
+
+.zonaMain {
+  margin: 10px;
+
+  display: grid;
+  /*Cuantas columnas queremos*/
+  grid-template-columns: repeat(12, 1fr); /*fr: unidad de medida*/
+
+  /*Establecemos tamaño minimo a la row*/
+  /* grid-auto-rows: minmax(200px, auto); */
+
+  /*Aplicamos un poco de aire*/
+  row-gap: 10px;
+  column-gap: 10px;
+
+}
+
+.main__zonaImagen {
+  grid-column: 0/9;
+  
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+
+.main__zonaImagen img {
+  width: 500%; /**/
+  /* max-height: 300px; */
+
+
+}
