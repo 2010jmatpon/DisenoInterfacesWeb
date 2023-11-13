@@ -1,0 +1,83 @@
+@font-face {
+    font-family: "CarnevaleeFreakshow";
+    src: url("fonts/CarnevaleeFreakshow.ttf") format("truetype");
+}
+body{
+    margin: 0;
+}
+.header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+  
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    
+    display: flex;
+
+    background-color: black;
+    color: #efb810;
+    background: linear-gradient(45deg, black, #DAA520);
+    
+  }
+  
+  .header__zonaTitulo {
+    height: 100%;
+    width: 20%;
+  
+    border-radius: 20px;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  
+    transition: 0.2s linear;
+  }
+  
+  .header__zonaTitulo:hover {
+    background-color: black;
+    transform: scale(1.05);
+  
+    font-size: 1.2em; /*em es una medida que toma como referencia el font-size del html*/
+  }
+
+  #tituloPagina {
+    font-family: "CarnevaleeFreakshow", sans-serif;
+
+  }
+  
+  #zonaTitulo__logo img {
+    width: 60px;
+    height: auto;
+  }
+  
+  .header__zonaNavegacion {
+    height: 100%;
+    width: 40%;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /*Establecemos aire entre elementos*/
+  }
+  
+  .header__zonaNavegacion a {
+    text-decoration: none; /*Para quitar el underline*/
+    color: #330033;
+  }
+  
+  .zonaNavegacion__div {
+    padding: 5px;
+    transition: 0.1s ease-out;
+  }
+  
+  .zonaNavegacion__div:hover {
+    border-bottom: 3px solid #ff6600;
+    border-radius: 5px;
+  }
+  
+  .zonaNavegacion__div h3 {
+    margin: 0;
+  }
