@@ -151,3 +151,13 @@ border-image: linear-gradient(45deg, blue, white, red) 1;
 .main__zonaLista h2{
   font-family: "CarnevaleeFreakshow", sans-serif;
 }
+
+/*
+************ZONA FOOTER*************
+*/
+
+.zonaFooter{
+  background-color: #000;
+  height: 300px;
+  width: 100%;
+}
