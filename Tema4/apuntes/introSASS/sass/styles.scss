@@ -6,62 +6,60 @@ $color-letra: #000000;
 $color-letra-header: #ffffff;
 $color-letra-nav: #222222;
 
-$color-borde-elemento-navegacion: #CC0000;
+$color-borde-elemento-navegacion: #cc0000;
 
-
-@mixin cambiar-fondo-y-letra($color-nuevo-fondo: #ffffff, $color-nuevo-letra: #000000){
+@mixin cambiar-fondo-y-letra($color-nuevo-fondo: #ffffff, $color-nuevo-letra: #000000) {
     background-color: $color-nuevo-fondo;
     color: $color-nuevo-letra;
 }
 
-@mixin establecer-grid($n-columnas: 12){
+@mixin establecer-grid($n-columnas: 12) {
     display: grid;
     grid-template-columns: repeat($n-columnas, 1fr);
 }
 
-.header{
+.header {
     @include cambiar-fondo-y-letra($color-fondo-header, $color-letra-header);
     @include establecer-grid();
 
-    h1{
+    h1 {
         grid-column: 3/11;
     }
 }
 
-.nav-bar{
+.nav-bar {
     @include cambiar-fondo-y-letra($color-fondo-nav, $color-letra-nav);
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
     padding-top: 1em;
     padding-bottom: 1em;
 
-    div{
+    div {
         padding-left: 1em;
         padding-right: 1em;
 
-        a{
+        a {
             text-decoration: none;
             padding: 1em;
             color: inherit; //Hereda el color de su padre
         }
 
-        a:hover{
+        a:hover {
             border-bottom: 2px solid $color-borde-elemento-navegacion;
         }
-
-
-        
+    }
+    .a__active {
+        border-bottom: 2px solid $color-borde-elemento-navegacion;
     }
 }
 
-.main-content{
+.main-content {
     @include cambiar-fondo-y-letra($color-fondo, $color-letra);
     @include establecer-grid();
 
-    .main__publicacion{
+    .main__publicacion {
         grid-column: 3/11;
     }
-
 }

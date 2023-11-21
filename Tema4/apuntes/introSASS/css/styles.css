@@ -27,7 +27,10 @@
   color: inherit;
 }
 .nav-bar div a:hover {
-  border-bottom: 2px solid #CC0000;
+  border-bottom: 2px solid #cc0000;
+}
+.nav-bar .a__active {
+  border-bottom: 2px solid #cc0000;
 }
 
 .main-content {
