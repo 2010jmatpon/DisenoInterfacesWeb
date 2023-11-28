@@ -84,12 +84,13 @@ body {
         h1 {
             font-family: Georgia, "Times New Roman", Times, serif;
         }
-        h2 {
+        .h2serif {
             font-family: Georgia, "Times New Roman", Times, serif;
         }
-        // h6 {
-        //     font-family: Georgia, "Times New Roman", Times, serif;
-        // }
+        h6 {
+            font-family: Georgia, "Times New Roman", Times, serif;
+            font-weight: 500;
+        }
         .parrafo1 {
             font-size: large;
             margin-left: 2em;
@@ -107,6 +108,25 @@ body {
 
         a:hover {
             color: $color-enlaces-hover;
+        }
+
+        .listaCursiva {
+            font-family: Georgia, "Times New Roman", Times, serif;
+        }
+
+        .estiloVineta {
+            list-style-type: square;
+        }
+        .estiloVinetaNone {
+            list-style-type: none;
+        }
+
+        dl {
+            dt {
+                h2 {
+                    font-weight: 500;
+                }
+            }
         }
     }
 
@@ -192,13 +212,49 @@ body {
             font-family: Georgia, "Times New Roman", Times, serif;
         }
     }
+
+    .definicion {
+        grid-column: 4/10;
+        text-align: justify;
+        background-color: $color-borde;
+        padding-left: 2em;
+        padding-right: 2em;
+        border-left: 3px solid rgb(182, 181, 181);
+    }
+    .imagenDefinicion {
+        grid-column: 5/9;
+        padding-top: 1em;
+        img {
+            width: 100%;
+        }
+    }
+    .zonaLink {
+        grid-column: 4/10;
+        h6 {
+            font-weight: 500;
+        }
+        i {
+            font-family: Georgia, "Times New Roman", Times, serif;
+        }
+        a {
+            text-decoration: none;
+
+            padding-bottom: 0.5em;
+            color: $color-enlaces;
+        }
+
+        a:hover {
+            color: $color-enlaces-hover;
+        }
+    }
 }
 
 .footer {
     @include cambiar-fondo-y-letra($color-fondo-pie, $color-texto-pie);
     @include establecer-grid();
-    padding-bottom: 4em ;
-    img, p {
+    padding-bottom: 4em;
+    img,
+    p {
         grid-column: 3/11;
         font-size: smaller;
     }

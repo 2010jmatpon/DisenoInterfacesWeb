@@ -52,8 +52,12 @@ body {
 .zonaMain .zonaContenido h1 {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
-.zonaMain .zonaContenido h2 {
+.zonaMain .zonaContenido .h2serif {
   font-family: Georgia, "Times New Roman", Times, serif;
+}
+.zonaMain .zonaContenido h6 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 500;
 }
 .zonaMain .zonaContenido .parrafo1 {
   font-size: large;
@@ -70,6 +74,18 @@ body {
 }
 .zonaMain .zonaContenido a:hover {
   color: rgba(34, 34, 34, 0.1333333333);
+}
+.zonaMain .zonaContenido .listaCursiva {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.zonaMain .zonaContenido .estiloVineta {
+  list-style-type: square;
+}
+.zonaMain .zonaContenido .estiloVinetaNone {
+  list-style-type: none;
+}
+.zonaMain .zonaContenido dl dt h2 {
+  font-weight: 500;
 }
 .zonaMain .zonaImg {
   grid-column: 4/10;
@@ -139,6 +155,38 @@ body {
 .zonaMain #zonaAutor i {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
+.zonaMain .definicion {
+  grid-column: 4/10;
+  text-align: justify;
+  background-color: #dddddd;
+  padding-left: 2em;
+  padding-right: 2em;
+  border-left: 3px solid rgb(182, 181, 181);
+}
+.zonaMain .imagenDefinicion {
+  grid-column: 5/9;
+  padding-top: 1em;
+}
+.zonaMain .imagenDefinicion img {
+  width: 100%;
+}
+.zonaMain .zonaLink {
+  grid-column: 4/10;
+}
+.zonaMain .zonaLink h6 {
+  font-weight: 500;
+}
+.zonaMain .zonaLink i {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.zonaMain .zonaLink a {
+  text-decoration: none;
+  padding-bottom: 0.5em;
+  color: #cc0000;
+}
+.zonaMain .zonaLink a:hover {
+  color: rgba(34, 34, 34, 0.1333333333);
+}
 
 .footer {
   background-color: #3b3b3b;
@@ -147,7 +195,8 @@ body {
   grid-template-columns: repeat(12, 1fr);
   padding-bottom: 4em;
 }
-.footer img, .footer p {
+.footer img,
+.footer p {
   grid-column: 3/11;
   font-size: smaller;
 }
