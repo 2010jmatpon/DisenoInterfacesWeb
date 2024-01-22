@@ -1,0 +1,10 @@
+.tabla-accesibilidad{
+    padding: 10px;
+    border: 2px solid black;
+}
+#tabla-accesibilidad--2{
+    text-align: left;
+}
+#tabla-accesibilidad--  3{
+    text-align: right;
+}
