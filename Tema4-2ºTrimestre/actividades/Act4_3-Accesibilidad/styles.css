@@ -1,10 +1,27 @@
-.tabla-accesibilidad{
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #CCCCFF;
     padding: 10px;
-    border: 2px solid black;
+    border-bottom: 3px solid black;
+    border-top: 3px solid black;
 }
-#tabla-accesibilidad--2{
-    text-align: left;
+
+.header__logo{
+    width: 10%;
+    padding: 10px;
 }
-#tabla-accesibilidad--  3{
-    text-align: right;
+
+th{
+    background-color: #CCCCFF;
+}
+td{
+    border:1px solid #d1d1d1;
+    padding: 5px;
 }
