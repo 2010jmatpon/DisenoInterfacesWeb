@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+    <link rel="stylesheet" href="contacto-accesible.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__zonaLogo">
+        <a href="#">
+          <img src="images/LEATHERFLAIRSVG.svg" alt="logo" />
+        </a>
+      </div>
+      <nav class="header__zonaNavegacion">
+        <div class="header__zonaNavegacion--nav">
+          <a href="index.html"><h2>INICIO</h2></a>
+        </div>
+        <div class="header__zonaNavegacion--nav">
+          <a href="#"><h2>TIENDA</h2></a>
+        </div>
+        <div class="header__zonaNavegacion--nav">
+          <a href="#"><h2>CURSOS</h2></a>
+        </div>
+        <div class="header__zonaNavegacion--nav">
+          <a href="#"><h2>CONTACTO</h2></a>
+        </div>
+      </nav>
+    </header>
+    <main class="main__formularioContacto">
+      <div>
+        <h1>CONTACTA CON NOSOTROS</h1>
+      </div>
+
+      <form class="formularioContacto__campos">
+        <div class="formularioContacto__campos--labels">
+          <label
+            class="contacto--label"
+            for="input__nombre"
+            id="label__nombre"
+            aria-label="input__nombre"
+            >Nombre:</label
+          >
+          <label
+            class="contacto--label"
+            for="input__apellidos"
+            id="label__apellidos"
+            aria-label="label__apellidos"
+            >Apellidos:</label
+          >
+          <label
+            class="contacto--label"
+            for="input__email"
+            id="label__email"
+            aria-label="label__email"
+            >E-mail:</label
+          >
+          <label
+            class="contacto--label"
+            for="input__motivo"
+            id="label__motivo"
+            aria-label="label__motivo"
+            >Motivo Contacto:</label
+          >
+        </div>
+        <div class="formularioContacto__campos--inputs">
+          <input
+            class="input__text"
+            type="text"
+            name="input__nombre"
+            id="input__nombre"
+            aria-labelledby="label__nombre"
+            placeholder="Escriba aquí su nombre"
+          />
+          <input
+            class="input__text"
+            type="text"
+            name="input__apellidos"
+            id="input__apellidos"
+            aria-labelledby="label__apellidos"
+            placeholder="Escriba aquí sus apellidos"
+          />
+          <input
+            class="input__text"
+            type="text"
+            name="input__email"
+            id="input__email"
+            aria-labelledby="label__email"
+            placeholder="Introduzca su e-mail"
+          />
+          <input
+            class="input__text"
+            type="text"
+            name="input__motivo"
+            id="input__motivo"
+            aria-labelledby="label__email"
+            placeholder="Escriba el motivo por el cuál contacta"
+          />
+        </div>
+        <div class="formularioContacto__campos--buttons">
+          <button class="formulario__button--send" role="button" type="submit">
+            ENVIAR
+          </button>
+          <button class="formulario__button--reset" role="button" type="reset">
+            BORRAR
+          </button>
+        </div>
+      </form>
+    </main>
+    <div class="zonaLogoAccesibilidad">
+      <a href="contacto.html"
+        ><img src="images/accessibility_16440.png" alt="logo accesibilidad"
+      /></a>
+    </div>
+    <footer class="footer">
+      <div class="footer__zonaContenido">
+        <div class="footer__zonaContenido--columna">
+          <h1>You are your own designer</h1>
+        </div>
+        <div class="footer__zonaContenido--columna">
+          <h3>Acerca de</h3>
+          <ul>
+            <li><a href="#">Quiénes somos</a></li>
+            <li><a href="#">Política de privacidad</a></li>
+            <li><a href="#">Envíos y Devoluciones</a></li>
+          </ul>
+        </div>
+        <div class="footer__zonaContenido--columna">
+          <h3>Contacto</h3>
+          <ul>
+            <li>Dirección: Avenida de España, 14 Ubrique (Cádiz)</li>
+            <li>Teléfono: 654 33 34 41</li>
+            <li>Email: artesanos@gmail.com</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__zonaLicencias">
+        <p xmlns:cc="http://creativecommons.org/ns#">
+          This work is licensed under
+          <a
+            href="http://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1"
+            target="_blank"
+            rel="license noopener noreferrer"
+            style="display: inline-block"
+            >CC BY-NC-ND 4.0<img
+              style="
+                height: 22px !important;
+                margin-left: 3px;
+                vertical-align: text-bottom;
+              "
+              src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" /><img
+              style="
+                height: 22px !important;
+                margin-left: 3px;
+                vertical-align: text-bottom;
+              "
+              src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" /><img
+              style="
+                height: 22px !important;
+                margin-left: 3px;
+                vertical-align: text-bottom;
+              "
+              src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" /><img
+              style="
+                height: 22px !important;
+                margin-left: 3px;
+                vertical-align: text-bottom;
+              "
+              src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1"
+          /></a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
