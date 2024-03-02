@@ -8,11 +8,17 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__zonaLogo">
-        <a href="#">
-          <img src="images/LEATHERFLAIRSVG.svg" alt="logo" />
+      <picture class="header__zonaLogo">
+        <a href="index.html">
+          <source type="image/svg" srcset="./images/LEATHERFLAIRSVG.svg" />
+          <img
+            src="./images/LEATHERFLAIR.png"
+            alt="LEATHERFLAIR"
+            srcset="./images/LEATHERFLAIR.png"
+          />
+          <source type="image/jpg" srcset="./images/LEATHERFLAIR.jpg" />
         </a>
-      </div>
+      </picture>
       <nav class="header__zonaNavegacion">
         <div class="header__zonaNavegacion--nav">
           <a href="index.html"><h2>INICIO</h2></a>

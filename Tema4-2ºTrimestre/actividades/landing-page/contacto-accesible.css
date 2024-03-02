@@ -1,27 +1,25 @@
 @font-face {
   font-family: "opendyslexic";
-  src: url("C:/Users/Usuario/Desktop/DAW 2/Diseño Interfaces Web/Tema4-2ºTrimestre/actividades/formulario-accesibilidad/fonts/OpenDyslexic-Regular.otf");
+  src: url("./fonts/OpenDyslexic-Regular.otf");
 }
 
 body {
   margin: 0;
   background-color: #c9ae9b;
   font-family: "opendyslexic";
+  background: url(images/black_leather.jpg) no-repeat;
+  background-size: cover;
 }
-/* .header{
-    
-    } */
+
 
 .header__zonaLogo {
   height: 150px;
   display: flex;
   justify-content: center;
-  /* position: absolute;
-        align-content: center; */
   border-bottom: 5px solid #442910;
-  background-color: #af601a;
+  /* background-color: #af601a;
   background: url(images/header_image.png) no-repeat;
-  background-size: cover;
+  background-size: cover; */
 }
 
 .header__zonaLogo img {
@@ -49,12 +47,6 @@ body {
   color: #ffffff;
 }
 .main__formularioContacto {
-  /* display: grid;
-          grid-template-columns: repeat(2, 1fr); */
-  /* display: flex;
-        justify-content: space-around;
-        flex-direction: column; */
-  /* align-items: center; */
   text-align: center;
   margin-right: 20%;
   margin-left: 20%;
@@ -100,7 +92,6 @@ body {
 }
 
 .formulario__button--reset {
-  /* margin-right: 7%; */
   padding: 1%;
   width: 35%;
   background-color: #7a4e3e;
@@ -124,9 +115,7 @@ body {
 #label__motivo {
   padding-top: 12%;
 }
-/* #label__email{
-    padding-top: 10%;
-  }*/
+
 #label__apellidos {
   padding-bottom: 5%;
 }
@@ -142,7 +131,6 @@ body {
   top: 98%;
 }
 .zonaLogoAccesibilidad {
-  /* position: sticky; */
   margin-top: 2.2%;
 }
 
