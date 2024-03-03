@@ -4,7 +4,7 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
-  background-color: #c9ae9b;
+  background-color: #ffffff;
 
   flex-direction: column;
   min-height: 100vh;
@@ -16,6 +16,8 @@ body {
   margin-top: auto;
   background: url(images/Cuero4.png) no-repeat;
   background-size: cover;
+  background-color: #7A4E3E;
+
 }
 
 .footer__zonaContenido {
