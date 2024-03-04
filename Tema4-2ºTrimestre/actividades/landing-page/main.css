@@ -16,8 +16,7 @@ body {
   margin-top: auto;
   background: url(images/Cuero4.png) no-repeat;
   background-size: cover;
-  background-color: #7A4E3E;
-
+  background-color: #7a4e3e;
 }
 
 .footer__zonaContenido {
@@ -71,41 +70,92 @@ body {
   height: auto;
 }
 
-.header{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 999; /* Asegura que el header esté por encima de todo */
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999; /* Asegura que el header esté por encima de todo */
 }
 .header__zonaLogo {
-    height: 150px;
-    display: flex;
-    justify-content: center;
-    border-bottom: 5px solid #442910;
-    background-size: cover;
-  }
-  
-  .header__zonaLogo img {
-    height: 100%;
-    width: auto;
-  }
-  
-  .header__zonaNavegacion {
-      height: 40px;
-      margin-right: 150px;
-      margin-left: 150px;
-      display: flex;
-      background-color: #7a4e3e;
-      justify-content: space-around;
-      align-items: center;
-      border-bottom: 5px solid #442910;
-      border-right: 5px solid #442910;
-      border-left: 5px solid #442910;
-    }
-  
-  .header__zonaNavegacion a {
-    text-decoration: none;
-    padding: 0;
-    color: #ffffff;
-  }
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  border-bottom: 5px solid #442910;
+  background-size: cover;
+}
+
+.header__zonaLogo img {
+  height: 100%;
+  width: auto;
+}
+
+.header__zonaNavegacion {
+  height: 40px;
+  margin-right: 150px;
+  margin-left: 150px;
+  display: flex;
+  background-color: #7a4e3e;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 5px solid #442910;
+  border-right: 5px solid #442910;
+  border-left: 5px solid #442910;
+}
+
+.header__zonaNavegacion a {
+  text-decoration: none;
+  padding: 0;
+  color: #ffffff;
+}
+
+.main__tabs {
+  padding: 1em;
+  background: url(images/cueroBlanco.jpg) no-repeat;
+  background-size: cover;
+  color: #000;
+}
+.tabs__botonesTab {
+  display: flex;
+  /*flex-flow: row nowrap; */
+  justify-content: flex-start;
+  align-items: center;
+}
+.botonesTab__pestana {
+  padding: 1em;
+  margin: 0 1em 0 0;
+  transition: all 0.2s ease;
+  cursor: pointer;
+
+  /* @include neo(1, 1em, 1em); */
+}
+.botonesTab__pestana:hover {
+  background-color: #7a4e3e;
+}
+.activoBoton {
+  background-color: #312b24;
+  color: #fff;
+}
+.activoBoton:hover {
+  background-color: #312b24;
+}
+
+.tabs__contenedorTexto {
+  position: relative;
+  overflow: hidden;
+  min-height: 20vh;
+}
+.contenedorTexto__bloque {
+  position: absolute;
+  top: 0;
+  /* // background-color: aquamarine; */
+  opacity: 0;
+
+  /* // padding: 1em; */
+
+  /* // @include neo(1, 1em, 1em) */
+}
+
+.activoTexto {
+  opacity: 1;
+}
