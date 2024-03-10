@@ -31,5 +31,5 @@ function onIniciar() {
     //contenedorTexto.addEventListener("click", removeActivo);
   }
   
-  window.onload = onIniciar();
+  window.onload = onIniciar;
   
