@@ -1,0 +1,208 @@
+body {
+  margin: 0;
+  background-color: #ffffff;
+  font-family: sans-serif;
+  background: url(images/black_leather.jpg) no-repeat;
+  background-size: cover;
+}
+/*######################################################
+  ######################### HEADER #######################
+  #######################################################*/
+
+.header__zonaLogo {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  /* position: absolute;
+        align-content: center; */
+  border-bottom: 5px solid #442910;
+  /* background-color: #af601a;
+    background: url(images/header_image.png) no-repeat;
+    background-size: cover; */
+}
+
+.header__zonaLogo img {
+  height: 100%;
+  width: auto;
+}
+
+.header__zonaNavegacion {
+  height: 40px;
+  margin-right: 150px;
+  margin-left: 150px;
+  display: flex;
+  background-color: #7a4e3e;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  border-bottom: 5px solid #442910;
+  border-right: 5px solid #442910;
+  border-left: 5px solid #442910;
+}
+
+.header__zonaNavegacion a {
+  text-decoration: none;
+  padding: 0;
+  color: #ffffff;
+}
+
+/*######################################################
+  ######################### MAIN #######################
+  #######################################################*/
+
+.main__carrousel {
+  position: relative;
+  width: 95%;
+  /* background-color: aqua; */
+
+  padding: 2em;
+  overflow: hidden;
+}
+.carrousel__grande {
+  width: 300%;
+  /* background-color: rgb(255, 0, 157); */
+  /* padding: 1em; */
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  transition: all 0.5s ease;
+  transform: translateX(0%);
+}
+.grande__picture {
+  width: calc(100% / 2);
+  /* // background-color: rgb(255, 123, 0); */
+  min-height: 10vh;
+
+  margin: 0 2.5em 0;
+}
+.grande__picture img {
+  width: 100%;
+}
+
+.carrousel__botones {
+  position: absolute;
+  /* // background-color: black; */
+  bottom: 15%;
+  width: 100%;
+  /* //margin: 1em 0 0;
+        //padding: 0.4em; */
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+
+  transition: all 0.5s ease;
+  opacity: 0.5;
+}
+.carrousel__botones:hover {
+  opacity: 1;
+}
+.botones__boton {
+  width: 2em;
+  height: 2em;
+  margin: 1em 1em 0;
+
+  background: url(images/cueroBlanco.jpg) no-repeat;
+  background-size: cover;
+  border: 1px solid black;
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.botones__boton:hover {
+  transition: all 0.5s ease;
+
+  background: url(images/black_leather.jpg) no-repeat;
+  background-size: cover;
+}
+
+.activo {
+  background: url(images/Cuero4.png) no-repeat;
+
+  background-size: cover;
+}
+
+.carrousel__contenedorTexto {
+  position: relative;
+  overflow: hidden;
+  min-height: 20vh;
+  padding-bottom: 3em;
+
+}
+.contenedorTexto__bloque {
+  position: absolute;
+  top: 0;
+  /* // background-color: aquamarine; */
+  opacity: 0;
+  color: #ffffff;
+  padding-left: 5em;
+  padding-right: 5em;
+
+  /* // @include neo(1, 1em, 1em) */
+}
+
+.contenedorTexto__bloque a{
+    text-decoration: none;
+    color: bisque;
+    cursor: pointer;
+}
+.activoTexto {
+  opacity: 1;
+}
+
+/*######################################################
+  ######################### FOOTER #######################
+  #######################################################*/
+.footer {
+  color: #ffffff;
+  padding: 20px;
+  margin-top: auto;
+  background: url(images/Cuero4.png) no-repeat;
+  background-size: cover;
+  background-color: #7a4e3e;
+}
+
+.footer__zonaContenido {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer__zonaContenido--columna {
+  width: 30%;
+}
+
+.footer__zonaContenido--columna h3 {
+  margin-bottom: 10px;
+}
+
+.footer__zonaContenido--columna h1 {
+  margin-top: 10%;
+}
+
+.footer__zonaContenido--columna ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer__zonaContenido--columna ul li {
+  margin-bottom: 5px;
+}
+
+.footer__zonaContenido--columna a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.footer__zonaLicencias {
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+}
+
+.footer__zonaLicencias a {
+  color: #ffffff;
+}

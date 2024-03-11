@@ -32,17 +32,21 @@ function onIniciar() {
   const divCarrouselGrande = document.querySelector(".carrousel__grande");
   //debemos añadir una funcionalidad click a los botones ...  tenemos que seleccionar TODOS los botones
   const botones = document.querySelectorAll(".botones__boton");
+  const bloquesTextoCarrousel = document.querySelectorAll(".contenedorTexto__bloque");
 
   botones.forEach((boton, i) => {
     boton.addEventListener("click", () => {
       console.log(`Se ha pulsado el botón número ${i}`);
 
-      botones.forEach((botonQuitar) => {
+      botones.forEach((botonQuitar, i) => {
         botonQuitar.classList.remove("activo");
+        bloquesTextoCarrousel[i].classList.remove("activoTexto");
+
       });
       boton.classList.add("activo");
+      bloquesTextoCarrousel[i].classList.add("activoTexto");
 
-      let calculoPx = i * -50;
+      let calculoPx = i * -33.3333333333;
       console.log(`Click en ${i}, cálculo = ${calculoPx}`)
       divCarrouselGrande.style.transform = `translateX(${calculoPx}%)`
     });
