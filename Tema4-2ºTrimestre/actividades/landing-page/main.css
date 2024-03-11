@@ -4,8 +4,8 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
-  background-color: #ffffff;
-
+  background: url(images/black_leather.jpg) no-repeat;
+  background-size: cover;
   flex-direction: column;
   min-height: 100vh;
 }
@@ -164,6 +164,7 @@ body {
   position: relative;
   width: 90%;
   /* background-color: aqua; */
+  
   padding: 2em;
   overflow: hidden;
 }
