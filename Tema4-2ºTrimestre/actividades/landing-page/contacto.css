@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "blackout-midnight";
+  src: url("./fonts/Blackout-Midnight.ttf");
+}
+
 body {
   margin: 0;
   background-color: #ffffff;
@@ -5,9 +10,9 @@ body {
   background: url(images/black_leather.jpg) no-repeat;
   background-size: cover;
 }
-/* .header{
-  
-  } */
+.header {
+  font-family: "blackout-midnight";
+}
 
 .header__zonaLogo {
   height: 150px;
@@ -27,23 +32,23 @@ body {
 }
 
 .header__zonaNavegacion {
-    height: 40px;
-    margin-right: 150px;
-    margin-left: 150px;
-    display: flex;
-    background-color: #7a4e3e;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center; 
-    border-bottom: 5px solid #442910;
-    border-right: 5px solid #442910;
-    border-left: 5px solid #442910;
-  }
+  height: 40px;
+  margin-right: 150px;
+  margin-left: 150px;
+  display: flex;
+  background-color: #7a4e3e;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  border-bottom: 5px solid #442910;
+  border-right: 5px solid #442910;
+  border-left: 5px solid #442910;
+}
 
 .header__zonaNavegacion a {
   text-decoration: none;
   padding: 0;
-  color: #ffffff;
+  color: #e2bcbc;
 }
 .main__formularioContacto {
   /* display: grid;
@@ -149,8 +154,7 @@ body {
   margin-top: auto;
   background: url(images/Cuero4.png) no-repeat;
   background-size: cover;
-  background-color: #7A4E3E;
-
+  background-color: #7a4e3e;
 }
 
 .footer__zonaContenido {

@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "blackout-midnight";
+  src: url("./fonts/Blackout-Midnight.ttf");
+}
+
 body {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -75,6 +80,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
+  font-family: "blackout-midnight";
   z-index: 999; /* Asegura que el header esté por encima de todo */
 }
 .header__zonaLogo {
@@ -106,7 +112,7 @@ body {
 .header__zonaNavegacion a {
   text-decoration: none;
   padding: 0;
-  color: #ffffff;
+  color: #e2bcbc;
 }
 
 .main__tabs {
