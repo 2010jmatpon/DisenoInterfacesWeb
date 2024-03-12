@@ -13,12 +13,8 @@ body {
   height: 150px;
   display: flex;
   justify-content: center;
-  /* position: absolute;
-        align-content: center; */
   border-bottom: 5px solid #442910;
-  /* background-color: #af601a;
-    background: url(images/header_image.png) no-repeat;
-    background-size: cover; */
+ 
 }
 
 .header__zonaLogo img {
@@ -53,15 +49,12 @@ body {
 .main__carrousel {
   position: relative;
   width: 95%;
-  /* background-color: aqua; */
 
   padding: 2em;
   overflow: hidden;
 }
 .carrousel__grande {
   width: 300%;
-  /* background-color: rgb(255, 0, 157); */
-  /* padding: 1em; */
 
   display: flex;
   justify-content: flex-start;
@@ -72,7 +65,6 @@ body {
 }
 .grande__picture {
   width: calc(100% / 2);
-  /* // background-color: rgb(255, 123, 0); */
   min-height: 10vh;
 
   margin: 0 2.5em 0;
@@ -83,11 +75,9 @@ body {
 
 .carrousel__botones {
   position: absolute;
-  /* // background-color: black; */
   bottom: 15%;
   width: 100%;
-  /* //margin: 1em 0 0;
-        //padding: 0.4em; */
+
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
@@ -135,13 +125,11 @@ body {
 .contenedorTexto__bloque {
   position: absolute;
   top: 0;
-  /* // background-color: aquamarine; */
   opacity: 0;
   color: #ffffff;
   padding-left: 5em;
   padding-right: 5em;
 
-  /* // @include neo(1, 1em, 1em) */
 }
 
 .contenedorTexto__bloque a{
